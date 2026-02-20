@@ -17,15 +17,10 @@
 ---
 
 ## 📁 Project Structure
-**Mobile Shop**
 * Front/ Vue 3 + Vuetify frontend
 * Server/ Node.js backend (Stripe integration)
 *  json-server/ Mock REST API for products
 
-## 1️⃣ ▶️ How to Run the Project
-```js
-cd Mobile-Shop
-```
 
 ## 2️⃣ Environment Variables
 
@@ -50,9 +45,7 @@ npm run dev
 
 ## 5️⃣ Run Frontend (Vue)
 ```js
-cd Front
+cd Mobile Shop
 npm install
 npm run dev
-```
-
 
