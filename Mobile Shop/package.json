@@ -1,0 +1,35 @@
+{
+  "name": "foodmood",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@img-comparison-slider/vue": "^8.0.0",
+    "@mdi/font": "^7.4.47",
+    "@stripe/stripe-js": "^7.3.1",
+    "axios": "^1.3.5",
+    "gsap": "^3.13.0",
+    "mitt": "^3.0.1",
+    "pinia": "^3.0.2",
+    "scrollreveal": "^4.0.9",
+    "swiper": "^8.4.7",
+    "three": "^0.178.0",
+    "vue": "^3.2.47",
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-i18n": "^11.1.5",
+    "vue-router": "^4.1.6",
+    "vuetify": "^3.8.4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "vite": "^7.1.4"
+  }
+}

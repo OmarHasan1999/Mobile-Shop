@@ -1,0 +1,482 @@
+.category-page {
+    width: 100%;
+    background: black;
+    padding-top: 15vh;
+}
+
+.sceneSection{
+    width: 100%;
+    height: 58vh;
+    position:absolute;
+    top: 13.6%;
+    right: 2%;
+    pointer-events: none;
+    z-index: 2;
+    will-change: transform, opacity;
+    overflow: visible;
+    transform: translateZ(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    position: relative;
+    padding-top: 7vh;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+}
+.slideImg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30vh;
+    overflow: hidden;
+}
+.slideImg img{
+    width: 30%;
+    height: 35vh;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+.slidePar{
+    width: 40.8%;
+    text-align: left;
+    padding-left: 120vh;
+    padding-bottom: 5vh;
+    font-family: 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    transform: translateX(80px);
+    animation: reveal 2s ease forwards;
+}
+@keyframes reveal{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slidePar .main-text{
+    display: block;               
+    color: aliceblue;               
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slidePar .sub-text{
+    display: block;
+    color: aliceblue;
+    font-size: 16px;
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-top: -1.5vh;
+    width: 95%;
+}
+.slidePar .main-text strong{
+    color: #6be08e;
+    font-weight: 600;
+}
+.slidePar .main-text .strongTwo{
+    color: #8590d7;
+    font-weight: 600;
+}
+.swiper-pagination{
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   padding-right: 30vh !important;
+   padding-left: 10vh !important;
+   padding-bottom: 12vh;
+   gap: 0.3vh;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    background:rgb(149, 145, 145) !important;
+    opacity: 1;
+    border-radius: 50% !important;
+    transition: all 0.5s ease;
+    border: 1px solid rgb(149, 145, 145) !important;
+    border-radius: 50% !important;
+    margin: 5px !important;
+    line-height: 5px !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color: white !important;
+    opacity: 1;
+    transform: scale(1.1);
+    border: 2px solid white !important;
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+    line-height: 5px !important;
+
+}
+
+.samsungSection{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90vh;
+}
+.samsungSection h3{
+    color: #c3e7eb;
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -86vh;
+    margin-bottom: 5vh;
+    overflow: hidden;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #bae4e9;
+    }
+    to {
+      text-shadow: 0 0 25px #bee7eb, 0 0 10px #bfe1e5;
+    }
+  }
+
+.samsungProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 1.5vh;
+}
+.samsungBox{
+    width: 50vh;
+    height: 60vh;
+    border: 1px solid #935fc445;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: rgba(100, 100, 111, 0.389) 0px 5px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    padding: 3vh 0vh;
+}
+.samsungBox h1{
+    font-size: 2.7vh;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 2.6vh;
+}
+.samsungBox p span{
+    color: rgb(171, 46, 171);
+    font-size: 2.3vh;
+}
+.samsungBox p{
+    color: white;
+    font-size: 2.3vh;
+    font-weight: 200;
+    padding-bottom: 2.5vh;
+    line-height: 0vh;
+}
+.imgDiv{
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgDiv img {
+height: auto;
+ width: 200px;
+ object-fit: cover;
+ cursor: pointer;
+ transition: 0.5s ease;
+} 
+.imgDiv img:hover{
+ transform: scale(1.06);
+
+}
+.imgDiv:hover .quickBtn{
+    opacity: 1 !important;
+} 
+
+.samsungBox .buyNow h5{
+    color: rgb(171, 46, 171);
+    font-size: 2.3vh;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.samsungBox .buyNow h5:hover{
+    transform: translateY(-3px);
+}
+.samsungBox .buyNow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vh;
+}
+
+/* media queries for products in category page */
+@media (max-width: 1120px){
+.samsungProducts{
+    width: 95% !important;
+}
+}
+@media (max-width: 340px){
+.samsungBox{
+    width: 45vh !important;
+    height: 60vh;
+    border: 1px solid black;
+    box-shadow: rgba(100, 100, 111, 0.389) 0px 5px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    padding: 3vh 0vh;
+}
+}
+
+/* media queries for first section in category page */
+@media (max-width:1280px) {
+    .slide{
+    width: 110% !important;
+    margin-left: 5vh !important;
+}
+.slidePar{
+    width: 40% !important;
+    padding-left: 100vh !important;
+    padding-top: 3vh !important;
+}
+}
+@media (max-width:1200px) {
+    .slide{
+    width: 110% !important;
+    margin-left: 5vh !important;
+}
+.slidePar{
+    width: 40% !important;
+    padding-left: 90vh !important;
+    padding-top: 5vh !important;
+}
+.swiper-pagination{
+    margin-left: -8vh !important;
+}
+}
+@media (max-width:1080px) {
+    .slide{
+    width: 105% !important;
+    margin-left: 5vh !important;
+}
+.slidePar{
+    width: 40% !important;
+    padding-left: 88vh !important;
+    padding-top: 5vh !important;
+}
+.swiper-pagination{
+    padding-left: -11vh !important;
+}
+.sceneSection{
+    left:1% !important;
+}
+}
+@media (max-width:1008px) {
+.sceneSection{
+    top: 11.7% !important;
+}
+.swiper-pagination{
+    padding-left: -1vh !important;
+}
+}
+@media (max-width:1000px) {
+   .slide{
+    width: 120% !important;
+    margin-left: 2vh !important;
+}
+.slidePar{
+    width: 38% !important;
+    padding-left: 85vh !important;
+    padding-top: 5vh !important;
+}
+.sceneSection{
+    left: 2% !important;
+}
+.swiper-pagination{
+    margin-bottom: -3vh !important;
+}
+}
+@media (max-width:960px) {
+   .slide{
+    width: 124% !important;
+    margin-left: 0vh !important;
+}
+.slidePar{
+    width: 32% !important;
+    padding-left: 85vh !important;
+    padding-top: 5vh !important;
+}
+.sceneSection{
+    left: 4.5% !important;
+}
+.swiper-pagination{
+    margin-bottom: 2vh !important;
+}
+}
+@media (max-width:900px) {
+    .slide{
+    padding-top: 24vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+}
+    .slidePar{
+    width: 50% !important;
+    padding-bottom: 0vh !important;
+    padding-left: 35vh !important;
+}
+.sceneSection{
+    top: 0% !important;
+    left: 0% !important;
+    transform: translate(27%,55%) !important;
+    width: 100% !important;
+    height: 50vh !important;
+}
+.swiper-pagination{
+    margin-bottom: 4vh !important;
+}
+}
+
+@media (max-width: 800px) {
+
+.slidePar{
+    width: 50% !important;
+    padding-bottom: 45vh !important;
+    padding-left: 28vh !important;
+}
+.swiper-pagination{
+    padding-bottom: 65vh;
+}
+}
+
+@media (max-width: 700px) {
+    .slidePar{
+    width: 55% !important;
+    padding-bottom: 45vh !important;
+    padding-left: 21vh !important;
+}
+@media (max-width:600px) {
+    .slideImg{
+        margin-left: -8vh;
+        width: 100%;
+    }
+}
+}
+@media (max-width:565px) {
+    .slidePar .sub-text{
+        width: 100% !important;
+        line-height: 1.4 !important;
+        margin-top: -2vh !important;
+
+    }
+    .slidePar{
+    width: 60% !important;
+    padding-left: 14vh !important;
+}
+    .swiper-pagination{
+    padding-bottom: 65vh;
+}
+}
+@media (max-width:490px) {
+    .slidePar{
+    width: 68% !important;
+    padding-left: 7vh !important;
+}
+.swiper-pagination{
+    padding-bottom: 65vh;
+}
+.slideImg{
+    width: 125%;
+    margin-left: -20vh;
+}
+}
+@media (max-width:430px) {
+    .slidePar{
+    width: 70% !important;
+    padding-left: 3vh !important;
+}
+.slidePar .main-text{
+    font-size: 20px !important;
+}
+.slidePar .sub-text{
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+}
+.slideImg{
+    width: 130%;
+    margin-left: -20vh;
+}
+}
+@media (max-width:380px) {
+    .slideImg{
+        margin-left: -20vh;
+        width: 133%;
+    }
+    .slideImg img{
+        height: 30vh;
+    }
+    .swiper-pagination{
+    padding-bottom: 60vh;
+}
+    .slidePar .main-text{
+    font-size: 18px !important;
+}
+.slidePar{
+    width: 69% !important;
+    padding-left: 3vh !important;
+}
+.swiper-pagination{
+    padding-bottom: 69vh;
+}
+.slidePar .sub-text{
+    font-size: 16px !important;
+    width: 96% !important;
+}
+}
+@media (max-width:365px) {
+    
+
+.slidePar .sub-text{
+    width: 99% !important;
+}
+.slideImg{
+    width: 135%;
+    margin-left: -17vh;
+}
+}
+@media (max-width:350px) {
+    .slideImg{
+        margin-left: -16vh;
+        width: 137%;
+    }
+}
+@media (max-width:330px) {
+    .swiper-pagination{
+        padding-bottom: 72vh;
+    }
+    .slideImg{
+        width: 138%;
+    }
+    .slidePar .main-text{
+        font-size: 16px !important;
+    }
+}

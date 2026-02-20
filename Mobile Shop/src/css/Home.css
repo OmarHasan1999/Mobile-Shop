@@ -1,0 +1,1138 @@
+.sectionOne{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0 18vh 0;
+}
+
+.firstContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.firstContainer .one{
+    width: 100%;
+    flex: 1 1 400px;
+    padding-top: 18vh;
+    margin-left: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.9s ease;
+}
+.one.hidden{
+    opacity: 0;
+}
+
+.one p{
+color: white;
+font-size: 17px;
+font-weight: 300;
+overflow: hidden;
+}
+.revealText{
+    overflow: hidden;
+    display: inline-block;
+    transform: translateX(-100%);
+    opacity: 0;
+} 
+.one.start .revealText.selling{
+    transform: translateX(-100%);
+    animation: revealText 0.8s forwards cubic-bezier(0.8, 0, 0.15, 1);
+    opacity: 1;
+}
+.one.start .revealText.slideText{
+    transform: translateX(-100%);
+    animation: slideWord 3s infinite 0.8s;
+    opacity: 1;
+}
+.one.start .revealText.believe{
+    transform: translateX(-100%);
+    animation: revealText 0.8s 0.2s forwards cubic-bezier(0.8, 0, 0.15, 1);
+    opacity: 1;
+            
+}
+@keyframes revealText{
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideWord {
+  0% {
+    transform: translateX(-120%);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  95% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+.one h3{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding: 2vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one .hrHome{
+    border: none;
+    border-left: 4px solid black;
+    height: 18vh;
+    transition: 0.6s ease;
+    
+}
+.one h4{
+color: white;
+font-size: 16px;
+font-weight: 300;
+overflow: hidden;
+}
+
+.firstContainer .two{
+    width: 100%;
+    height: 500px;
+    padding-right: 10vh;
+    padding-bottom: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphoneModel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+    margin-top: -23vh;
+    margin-bottom: 5vh;
+}
+.leftSectionIphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.iphoneModel .iphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 350px;
+    height: 450px;
+    padding-left: 7.5vh;
+}
+.iphoneModel .colors{
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.096);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iphoneModel h3{
+    color: rgba(240, 248, 255, 0.75);
+    font-size: 14px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.buttonsColor{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 5px;
+}
+.buttonsColor button{
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 1.5vh;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.rightSectionIphone{
+    width: 70%;
+    padding-top: 4vh;
+}
+.iphoneModel p{
+    color: #cec9c9;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateX(20px);
+    transition: all 0.6s ease-out;
+}
+
+.hotspotLogo {
+width: 8px;
+height: 8px;
+background: red;  
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+pointer-events: auto;
+box-shadow: 0 0 8px rgba(255,255,255,0.6); 
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.flashhotspot{
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  bottom: 127.1%;
+  right: 100.7%;
+}
+.hotspotLogo::before,
+.flashhotspot::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: wheat;
+  border-radius: 50%;
+  animation: pulse 1.8s infinite ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.hotspotLogo:hover ,
+.flashhotspot:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 12px rgba(255,255,255,0.9);
+}
+
+.tooltip , .flashtooltip {
+  display: none;
+  position: absolute;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  top: -35px;
+  left: -20px;
+  backdrop-filter: blur(3px);
+  background: black;
+  color: #f9f1f1;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  padding: 4px 8px;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.hotspotLogo:hover .tooltip {
+  display: block;
+}
+.flashhotspot:hover .flashtooltip {
+  display: block;
+}
+
+.sectionTwo{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sectionTwo h3{
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -13vh;
+    margin-bottom: 10vh;
+}
+
+.sectionTwo .compareImage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 18vh;
+    gap: 4vh;
+}
+.compareImage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.compareImage p{
+    font-size: 16px;
+    color: #cec9c9;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 10vh;
+    transform: translateY(-10px);
+    transition: all 0.8s ease-in;
+}
+.compareImage p strong{
+    color: rgb(223, 227, 230);
+}
+
+.featured{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 2vh 0;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.featuredBox{
+    width: 45vh;
+    height: 66vh;
+    border: 1px solid #935fc445;
+    border-radius: 12px;
+    box-shadow: rgba(103, 100, 111, 0.389) 0px 5px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+    margin: 1vh 4vh 1vh 3vh;
+    background: rgba(255, 255, 255, 0.05);
+}
+.featuredBox h1{
+    font-size: 2.7vh;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+.featuredBox p span{
+    color: rgb(171, 46, 171);
+    font-size: 2.3vh;
+    font-weight: 500;
+}
+.featuredBox p{
+    color: white;
+    font-size: 2.3vh;
+    font-weight: 200;
+}
+
+.imgDivHome{
+    height: 250px;
+    width: 100%;
+    min-width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    position: relative;
+}
+.imgDivHome img {
+height: auto;
+ width: 200px;
+ object-fit: cover;
+ cursor: pointer;
+ transition: 0.5s ease;
+} 
+.imgDivHome img:hover {
+transform: scale(1.06);
+} 
+
+.imgDivHome:hover .quickBtn{
+    opacity: 1 !important;
+} 
+
+.seeMore{
+    display: flex;
+    justify-content: space-between;
+}
+.seeMore h5{
+    color: rgb(171, 46, 171);
+    font-size: 2vh;
+    margin-right: 21vh;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.seeMore h5:hover{
+    transform: translateY(-3px);
+}
+.seeMore{
+    cursor: pointer;
+    color: white;
+    font-size: 3vh;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+ .swiper-button-next::after{
+    color: rgb(172, 26, 183);
+    font-size: 10vh;
+    font-weight: 800;
+  }
+  .swiper-button-prev::after{
+    font-size: 10vh;
+    font-weight: 800;
+    color: aliceblue;
+  }
+
+  .swiper-pag .swiper-pagination-bullet{
+    opacity: 0 !important;
+  }
+
+  .video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px;
+  }
+  .video .iphoneVideo{
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .video .iphoneVideo video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+.video video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+
+@media (max-width: 1100px){
+    .firstContainer .one{
+    padding-top: 18vh;
+    margin-left: 30vh;
+}
+    }
+@media (max-width: 900px){
+    .firstContainer .one{
+    padding-top: 18vh;
+    margin-left: 13vh;
+}
+    .firstContainer .two{
+    width: 100%;
+    height: 500px;
+    padding-right: 0vh;
+    padding-left: 10vh;
+    padding-bottom: 6vh;
+}
+    }
+
+@media (max-width: 770px){
+    .firstContainer .one{
+    padding-top: 18vh;
+    margin-left: 8vh;
+}
+    .firstContainer .two{
+    padding-left: 12vh;
+}
+.firstContainer .one h3{
+        padding: 1vh;
+    }
+    }
+
+@media (max-width: 765px){
+  .firstContainer .v-rowFirstContainer {
+    flex-direction: column-reverse !important;
+  }
+  
+
+  .firstContainer .v-colFirstContainer {
+    max-width: 100% !important;
+  }
+  .firstContainer .one{
+    margin-left: 37vh;
+    padding-top: -4vh !important;
+    padding-bottom: -1vh !important;
+    margin-top: -42vh !important;
+}
+.one h4{
+    margin-top: 0vh;
+}
+    .firstContainer .one h3{
+        padding: 0vh 0vh 0vh 0.4vh !important;
+    }
+.firstContainer .two{
+    padding-left: 0.2vh !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: -8vh !important;
+    margin-top: -10vh !important;
+    height: 500px !important;
+}
+.one .hrHome{
+    height: 9vh !important;
+}
+.one h3{
+    font-size: 38px!important;
+    font-weight: 800!important;
+}
+}
+
+@media (max-width: 700px){
+.firstContainer .one{
+    margin-left: 30vh;
+}
+}
+@media (max-width: 600px){
+.firstContainer .one{
+    margin-left: 23vh;
+}
+}
+@media (max-width: 550px){
+.firstContainer .one{
+    margin-left: 18vh;
+}
+}
+
+@media (max-width: 530px){
+.one h3{
+    font-size: 36px;
+    font-weight: 800;
+}
+.firstContainer .one{
+    margin-left: 20vh;
+}
+}
+@media (max-width: 480px){
+.firstContainer .one{
+    margin-left: 16vh!important;
+}
+}
+@media (max-width: 450px){
+.one h3{
+    font-size: 36px!important;
+    font-weight: 800!important;
+}
+.firstContainer .one{
+    margin-left: 13vh!important;
+}
+}
+@media (max-width: 400px){
+.one h3{
+    font-size: 33px!important;
+    font-weight: 800!important;
+}
+.firstContainer .one{
+    margin-left: 12vh!important;
+    padding-top: -4vh !important;
+    margin-top: -38vh !important;
+}
+.firstContainer .two{
+    height: 470px!important;
+
+}
+.one .hrHome{
+    height: 9vh!important;
+}
+.one h4{
+    font-size: 15px!important;
+}
+.one p{
+    font-size: 15px!important;
+}
+
+}
+@media (max-width: 365px){
+    .firstContainer .two{
+    width: 120%!important;
+    padding-right: 9vh!important;
+}
+.firstContainer .one{
+    margin-left: 9vh!important;
+}
+.one h3{
+    font-size: 31px!important;
+    font-weight: 800!important;
+}
+}
+@media (max-width: 350px){
+.one h3{
+    font-size: 30px!important;
+    font-weight: 800 !important;
+}
+.firstContainer .one{
+    margin-left: 8vh !important;
+    margin-top: -36vh !important;
+
+}
+.firstContainer .two{
+    height: 450px !important;
+    width: 135% !important;
+    padding-right: 15vh !important;
+}
+}
+@media (max-width: 320px){
+.one h3{
+    font-size: 28px!important;
+    font-weight: 800 !important;
+}
+.firstContainer .one{
+    margin-left: 7vh !important;
+    margin-top: -37vh !important;
+
+}
+}
+
+@media (max-width: 1100px){
+.rightSectionIphone{
+    width: 90%;
+    margin-left: -4vh;
+}
+
+.iphoneModel{
+    padding: 0px 40px 0 0 ;
+}
+.leftSectionIphone{
+    padding-right: 10vh;
+}
+
+}
+@media (max-width: 950px){
+.rightSectionIphone{
+    width: 105%;
+    margin-left: -10vh;
+}
+
+.leftSectionIphone{
+    margin-left: -20vh;
+}
+.iphoneModel h3{
+    font-size: 14px;
+    text-align: center;
+}
+}
+@media (max-width: 800px){
+.rightSectionIphone{
+    width: 125%;
+    margin-left: -13vh;
+}
+
+.leftSectionIphone{
+    margin-left: -25vh;
+}
+.iphoneModel h3{
+    font-size: 14px;
+    text-align: center;
+}
+.iphoneModel .iphone{
+    width: 300px !important;
+    height: 430px;
+}
+}
+@media (max-width: 765px){
+.iphoneModel .iphoneModelRow{
+    flex-direction: column;
+}
+.iphoneModel{
+    padding : 0 20px
+}
+.leftSectionIphone{
+    margin: 0vh;
+    padding: 0;
+}
+.rightSectionIphone{
+    padding: 0;
+    width: 173%;
+}
+.rightSectionIphone p{
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    transition: all 0.8s ease-out;
+    padding-right:4vh;
+    margin-left: -3vh;
+}
+}
+@media (max-width: 670px){
+    .iphoneModel h3{
+        white-space: nowrap;
+    }
+}
+@media (max-width: 650px){
+.iphoneModel{
+        padding : 0px
+}
+.rightSectionIphone{
+    padding: 0;
+    width: 180%;
+}
+}
+@media (max-width: 550px){
+    .iphoneModel{
+        padding : 0px 6vh
+}
+    .rightSectionIphone{
+        width: 200%;
+    }
+    .rightSectionIphone p{
+        font-size: 15px;
+        line-height: 1.65;
+        margin-left: -6vh;
+    }
+}
+@media (max-width: 500px){
+    .iphoneModel{
+        padding : 0px 2vh;
+}
+    .rightSectionIphone{
+        width: 195%;
+    }
+    .rightSectionIphone p{
+        
+        margin-left: -5vh;
+        text-align: center;
+    }
+}
+@media (max-width: 450px){
+    .iphoneModel{
+        padding : 0px 0vh;
+}
+    .rightSectionIphone{
+        width: 195%;
+    }
+    .rightSectionIphone p{
+        margin-left: -6vh;
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    .iphoneModel{
+        padding : 0px 12vh;
+}
+    .rightSectionIphone{
+        width: 198%;
+        
+    }
+    .rightSectionIphone p{
+        margin-left: -12vh;
+        text-align: center;
+        width: 205%;
+    }
+}
+@media (max-width: 370px){
+    .iphoneModel{
+        padding : 0px 14vh;
+}
+    .rightSectionIphone{
+        width: 230%;
+        
+    }
+    .rightSectionIphone p{
+        padding: 0vh;
+        margin-left: -12vh;
+        text-align: center;
+        width: 220%;
+    }
+}
+
+@media (max-width: 350px){
+    .iphoneModel{
+        padding : 0px 16vh;
+}
+    .rightSectionIphone{
+        width: 370%;
+        margin-top: -1vh !important;
+        
+    }
+    .rightSectionIphone p{
+        font-size: 14.5px;
+        margin-left: -11vh;
+        text-align: center;
+        line-height: 1.45;
+        width: 193%;
+    }
+}
+@media (max-width: 330px){
+    .iphoneModel{
+        padding : 0px 17.5vh;
+}
+    .rightSectionIphone{
+        width: 850%;
+        margin-top: -1.8vh !important;
+        
+    }
+    .rightSectionIphone p{
+        font-size: 13.5px;
+        margin-left:-14vh;
+        text-align: left;
+        line-height: 1.5;
+        padding: 0 3vh;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;      /* عدد الأسطر التي تُعرض */
+        -webkit-box-orient: vertical;
+        overflow: hidden;  
+        width: 170%;
+    }
+}
+@media (max-width: 320px){
+    .iphoneModel{
+        padding : 0px 17vh;
+}
+    .rightSectionIphone{
+        width: 490%;
+        margin-top: -1.8vh !important;
+        padding: 0 -12vh;
+        
+    }
+    .rightSectionIphone p{
+        font-size: 13.5px;
+        margin-left:-14vh;
+        text-align: left;
+        line-height: 1.5;
+        padding: 0 3vh;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;      /* عدد الأسطر التي تُعرض */
+        -webkit-box-orient: vertical;
+        overflow: hidden;  
+        width: 280%;
+    }
+}
+
+/* compare images section */
+@media (max-width: 1000px){
+    .sectionTwo .compareImage{
+    width: 65%;
+    height: 75vh;
+}
+}
+
+@media (max-width: 900px){
+    .sectionTwo .compareImage{
+    width: 68%;
+    height: 72vh;
+}
+}
+
+@media (max-width: 770px){
+    .sectionTwo .compareImage{
+    width: 73%;
+    height: 70vh;
+}
+}
+
+@media (max-width: 670px){
+    .sectionTwo .compareImage{
+    width: 77%;
+    height: 70vh;
+}
+}
+@media (max-width: 580px){
+    .sectionTwo .compareImage{
+    width: 82%;
+    height: 70vh;
+}
+}
+@media (max-width: 500px){
+    .sectionTwo .compareImage{
+    width: 88%;
+    height: 70vh;
+}
+}
+@media (max-width: 450px){
+    .sectionTwo .compareImage{
+    width: 90%;
+    height: 70vh;
+}
+}
+
+@media (max-width: 420px){
+    .sectionTwo .compareImage{
+    width: 93%;
+    height: 70vh;
+}
+
+}
+@media (max-width: 380px){
+    .sectionTwo .compareImage{
+    width: 96%;
+    height: 68vh;
+    gap: 3vh;
+}
+.compareImage p{
+    font-size: 14.5px;
+}
+
+}
+@media (max-width: 350px){
+    .sectionTwo .compareImage{
+    width: 96%;
+    height: 65vh;
+    gap: 2vh;
+}
+.compareImage p{
+    font-size: 14px;
+}
+
+}
+@media (max-width: 320px){
+    .sectionTwo .compareImage{
+    width: 97%;
+    height: 65vh;
+    margin-bottom: 19vh;
+    gap: 2vh;
+}
+.compareImage p{
+    font-size: 13px;
+}
+}
+
+/* featured products section */
+@media (max-width: 1350px){
+.featuredBox{
+    margin: 1vh -0.6vh 1vh -0.2vh !important;
+}
+}
+@media (max-width: 1300px){
+.featuredBox{
+    margin: 1vh 0vh 1vh -0.5vh !important;
+}
+}
+@media (max-width: 1250px){
+.featuredBox{
+    margin: 1vh 1vh 1vh 7vh !important;
+}
+}
+@media (max-width: 1200px){
+
+.featuredBox{
+    margin: 1vh 2vh 1vh 5vh !important;
+}
+}
+@media (max-width: 1130px){
+.featuredBox{
+    margin: 1vh 4vh 1vh 2vh !important;
+}
+}
+@media (max-width: 1050px){
+.featuredBox{
+    margin: 1vh 2vh 1vh 0vh !important;
+}
+}
+@media (max-width: 1000px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 0vh !important;
+}
+}
+@media (max-width: 960px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 10vh !important;
+}
+
+}
+@media (max-width: 900px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 8vh !important;
+}
+}
+@media (max-width: 850px){
+.featuredBox{
+    margin: 1vh 2vh 1vh 6vh !important;
+}
+}
+@media (max-width: 800px){
+.featuredBox{
+    margin: 1vh 2vh 1vh 4vh !important;
+}
+}
+@media (max-width: 750px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 2vh !important;
+}
+.sectionTwo h3{
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+}
+@media (max-width: 700px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 0.3vh !important;
+}
+}
+@media (max-width: 670px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 0vh !important;
+}
+}
+@media (max-width: 650px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 22vh !important;
+}
+}
+@media (max-width: 620px){
+.featuredBox{
+    margin: 1vh 0vh 1vh 18vh !important;
+}
+}
+@media (max-width: 560px){
+.featuredBox{
+    margin: 1vh 15vh !important;
+}
+.sectionTwo h3{
+    font-size: 27px !important;
+    font-weight: 500 !important;
+}
+}
+@media (max-width: 520px){
+.featuredBox{
+    margin: 1vh 12vh !important;
+}
+
+}
+@media (max-width: 490px){
+.featuredBox{
+    margin: 1vh 9vh !important;
+}
+.sectionTwo h3{
+    font-size: 25px !important;
+    font-weight: 500 !important;
+}
+}
+@media (max-width: 450px){
+
+.featuredBox{
+    margin: 1vh 7vh !important;
+}
+}
+@media (max-width: 425px){
+.featuredBox{
+    margin: 1vh 4.5vh !important;
+}
+}
+@media (max-width: 390px){
+.featuredBox{
+    margin: 1vh 2vh !important;
+}
+.sectionTwo h3{
+    font-size: 23px !important;
+    font-weight: 600 !important;
+}
+}
+@media (max-width: 365px){
+.featuredBox{
+    margin: 1vh 1vh !important;
+}
+}
+@media (max-width: 350px){
+.featuredBox{
+    margin: 1vh 0vh !important;
+}
+}
+@media (max-width: 340px){
+.featuredBox{
+    margin: 1vh 1.2vh !important;
+}
+.sectionTwo h3{
+    font-size: 21px !important;
+    font-weight: 600 !important;
+}
+.featuredBox{
+    width: 41vh !important;
+}
+}
+@media (max-width: 330px){
+.featuredBox{
+    margin: 1vh 0.8vh !important;
+}
+}
+@media (max-width: 320px){
+.featuredBox{
+    margin: 1vh 0.2vh !important;
+    width: 40vh !important;
+}
+}
+
+@media (max-width:1200px){
+    .flashhotspot{
+        bottom: 130.7%;
+        right: 100.7%;
+    }
+    .hotspotLogo{
+        bottom: 102%;
+    }
+}
+@media (max-width:1100px){
+    .flashhotspot{
+        bottom: 130.72%;
+        right: 100.5%;
+    }
+    .hotspotLogo{
+        bottom: 102%;
+    }
+}
+@media (max-width:800px){
+    .flashhotspot{
+        bottom: 132.3%;
+        right: 99.5%;
+    }
+    .hotspotLogo{
+        bottom: 105%;
+        left: 1%;
+    }
+}
+@media (max-width:765px){
+    .flashhotspot{
+        bottom: 126.95%;
+        right: 99.5%;
+    }
+    .hotspotLogo{
+        bottom: 99.5%;
+        left: 1%;
+    }
+}
+
+
+
