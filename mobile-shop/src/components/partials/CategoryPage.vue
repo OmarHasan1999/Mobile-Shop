@@ -77,8 +77,13 @@ import { storeToRefs } from "pinia"
 import { useRoute, useRouter } from "vue-router"
 
 // swiper.js library
-import { Swiper, SwiperSlide } from "vue-awesome-swiper"
-import { Navigation,Pagination,Autoplay } from "swiper"
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
 import iphoneImg_1 from "/assets/img/abhijeet-barak-g79dPAkB4wo-unsplash.webp"
 import iphoneImg_2 from "/assets/img/v-a-tao-OxvlDO8RwKg-unsplash.webp"

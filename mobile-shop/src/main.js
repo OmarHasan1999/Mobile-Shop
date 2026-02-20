@@ -24,11 +24,6 @@ const vuetify = createVuetify({
   directives,
 })
 
-// Swiper
-import "swiper/css"
-import "swiper/css/pagination"
-import "swiper/css/navigation"
-
 
 //Emitter Config
 import mitt from 'mitt'

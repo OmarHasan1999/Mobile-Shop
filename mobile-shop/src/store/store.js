@@ -25,7 +25,7 @@ export const products = defineStore("products", {
 
     actions: {
         async getProducts(){
-            await axios.get('http://localhost:3000/products')
+            await axios.get(`${import.meta.env.VITE_API_URL}/products`)
             .then((res) => {
                 this.featureProducts = res.data.slice(2,10)
                 this.allProducts = res.data
@@ -34,13 +34,13 @@ export const products = defineStore("products", {
 
         // show products page with the name of the category
         async productsWithCat(cat){
-            await axios.get(`http://localhost:3000/products?category=${cat}`)
+            await axios.get(`${import.meta.env.VITE_API_URL}/products?category=${cat}`)
             .then((res) => this.productCategory = (res.data))
         },
 
         // show details page with ID of the product
         async showDetails(id){
-            await axios.get(`http://localhost:3000/products/${id}`)
+            await axios.get(`${import.meta.env.VITE_API_URL}/products/${id}`)
             .then((res) => this.theDetails = (res.data))
 
         }

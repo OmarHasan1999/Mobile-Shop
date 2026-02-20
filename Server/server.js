@@ -1,6 +1,8 @@
 const express = require("express")
 const cors = require("cors")
 const helmet = require("helmet")
+const port = process.env.PORT || 4242
+
 require("dotenv").config()
 const stripe = require('stripe')(process.env.SECRET_KEY)
 const app = express()
@@ -73,4 +75,4 @@ app.post('/create-checkout-session', async(req,res) => {
     }
 })
 
-app.listen(4242, () => console.log("server running on http://localhost:4242"))
+app.listen(port,"0.0.0.0", () => console.log(`Server running at http://localhost:${port}`))

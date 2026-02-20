@@ -75,9 +75,9 @@
                 </div>
             </div>
             </SwiperSlide>
-            <div class="prev"></div>
-            <div class="next"></div>
-            <div class="swiper-pag"></div>
+            <!-- <div class="prev"></div> -->
+            <!-- <div class="next"></div> -->
+            <!-- <div class="swiper-pag"></div> -->
         </Swiper>
 
         </v-col>
@@ -108,8 +108,13 @@ import img1 from "/assets/img/leftImg.webp"
 import img2 from "/assets/img/right.webp"
 
 // import Swiper
-import { Swiper, SwiperSlide } from "vue-awesome-swiper"
-import { Navigation,Pagination,Autoplay } from "swiper"
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
 // ScrollReveal.js library
 import ScrollReveal from "scrollreveal"
