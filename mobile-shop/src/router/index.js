@@ -51,8 +51,52 @@ scrollBehavior (to, from, savedPosition) {
       component: () =>
         import("../views/searchView.vue")
   },
-  
-  ]
+  { 
+      path: "/admin-page",
+      name: "AdminPage",
+      component: () =>
+        import("../views/adminView.vue"),
+      meta: { requiresAdmin: true }
+  },
+  { 
+      path: "/admin-login",
+      name: "AdminLogin",
+      component: () =>
+        import("../views/adminLogin.vue")
+  },
+  { 
+      path: "/admin-page/add-product",
+      name: "AddPage",
+      component: () =>
+        import("../views/AddView.vue"),
+      meta: { requiresAdmin: true }
+  },
+  { 
+      path: "/admin-page/edit/:theId",
+      name: "Edit Page",
+      component: () =>
+        import("../views/EditView.vue"),
+      meta: { requiresAdmin: true }
+  },
+
+  ],
+
 });
+
+  router.beforeEach((to, from, next) => {
+
+    const isAdmin = localStorage.getItem('isAdmin')
+
+    if(to.meta.requiresAdmin && !isAdmin){
+
+        next('/admin-login')
+
+    } else {
+
+        next()
+
+    }
+
+})
 
 export default router

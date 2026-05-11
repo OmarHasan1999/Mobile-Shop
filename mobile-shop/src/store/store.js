@@ -43,6 +43,23 @@ export const products = defineStore("products", {
             await axios.get(`${import.meta.env.VITE_API_URL}/products/${id}`)
             .then((res) => this.theDetails = (res.data))
 
+        },
+        // update the product with ID of the product
+        async updateProduct(id, productData){
+            try{
+                await axios.put(`${import.meta.env.VITE_API_URL}/products/${id}`, productData)
+            } catch(error){
+                console.error('Error updating product:', error)
+            }
+        },
+        // add a new product
+        async addProduct(productData){
+            const response =await axios.post(`${import.meta.env.VITE_API_URL}/products`, productData)
+            return response.data
+        },
+        // delete the product with ID of the product
+        async deleteProduct(id){
+            await axios.delete(`${import.meta.env.VITE_API_URL}/products/${id}`)
         }
     }
 })

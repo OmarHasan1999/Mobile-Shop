@@ -1,263 +1,237 @@
-
 {
-    "products" : [
-      {
-            "id" : 1,
-            "title" : "Samsung Galaxy S",
-            "category": "Samsung",
-            "price" : 299,
-            "img" : "/assets/products-img/webp/samsung1.webp",
-            "productDetails" : "Dimensions & Weight, 70.6 x 146.0 x 7.6mm, 168g ; Camera, 12MP Ultra-Wide Camera · F2.2, FOV 120˚. 50 MP Wide Camera · Dual Pixel AF, OIS, F1.8, FOV 85 esources; Dimensions & Weight, 70.6 x 146.0 x 7.6mm, 168g ; Camera, 12MP Ultra-Wide Camera · F2.2, FOV 120˚. 50 MP Wide Camera · Dual Pixel AF, OIS, F1.8, FOV 85",
-            "imgGroup" : [
-                "/assets/phone-accessories/webp/pngwing-com-32.webp",
-                "/assets/phone-accessories/webp/pngwing-com-12.webp",
-                "/assets/phone-accessories/webp/pngwing-com-22.webp",
-                "/assets/phone-accessories/webp/pngwing-com-2.webp"
-            ]
-          },
-          {
-            "id" : 2,
-            "title" : "Samsung Galaxy A53",
-            "category": "Samsung",
-            "price" : 399,
-            "img" : "/assets/products-img/webp/samsung2.webp",
-            "productDetails": "Dimensions & Weight: Unfolded: 128.1 x 158.2 x 6.4mm, Folded: 67.1 x 158.2 x 14.4mm, 271g; Camera: 12MP Wide-angle Camera · F1.8, OIS. 12MP Ultra Wide Camera · F2.2. 12MP Telephoto Camera · F2.4, OIS",
-            "imgGroup" : [
-                "/assets/phone-accessories/webp/pngwing-com-35.webp",
-                "/assets/phone-accessories/webp/pngwing-com-13.webp",
-                "/assets/phone-accessories/webp/pngwing-com-17.webp",
-                "/assets/phone-accessories/webp/pngwing-com-1.webp"
-            ]
-          },
-          {
-            "id" : 3,
-            "title" : "Samsung Galaxy Fold",
-            "category": "Samsung",
-            "price" : 380,
-            "img" : "/assets/products-img/webp/samsung3.webp",
-            "productDetails": "Dimensions & Weight: Unfolded: 128.1 x 158.2 x 6.4mm, Folded: 67.1 x 158.2 x 14.4mm, 271g; Camera: 12MP Wide-angle Camera · F1.8, OIS. 12MP Ultra Wide Camera · F2.2. 12MP Telephoto Camera · F2.4, OIS",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngwing-com-6.webp",
-                "/assets/phone-accessories/webp/pngwing-com-16.webp",
-                "/assets/phone-accessories/webp/pngwing-com-10.webp",
-                "/assets/phone-accessories/webp/pngwing-com-35.webp"
-            ]
-          },
-          {
-            "id" : 4,
-            "title" : "Samsung Galaxy Note 20",
-            "category": "Samsung",
-            "price" : 400,
-            "img" : "/assets/products-img/webp/samsung4.webp",
-            "productDetails": "Dimensions & Weight: 164.8 x 77.2 x 8.1mm, 208g; Camera: 108MP Wide-angle Camera · F1.8, FOV 79°. 12MP Ultra Wide Camera · F2.2, FOV 120°. 12MP Telephoto Camera · F3.0, OIS",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngwing-com-33.webp",
-                "/assets/phone-accessories/webp/pngwing-com-9.webp",
-                "/assets/phone-accessories/webp/pngwing-com-29.webp",
-                "/assets/phone-accessories/webp/pngwing-com-40.webp"
-            ]
-          },
-          {
-            "id" : 5,
-            "title" : "Samsung Galaxy S21",
-            "category": "Samsung",
-            "price" : 250,
-            "img" : "/assets/products-img/webp/samsung5.webp",
-            "productDetails": "Dimensions & Weight: 155.7 x 74.5 x 7.9mm, 171g; Camera: 12MP Wide Camera · F1.8, FOV 79°. 12MP Ultra Wide Camera · F2.2, FOV 123°. 8MP Telephoto Camera · F2.4, FOV 32°",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngwing-com-37.webp",
-                "/assets/phone-accessories/webp/pngwing-com-18.webp",
-                "/assets/phone-accessories/webp/pngwing-com-4.webp",
-                "/assets/phone-accessories/webp/pngwing-com-25.webp"
-            ]
-          },
-          {
-            "id" : 6,
-            "title" : "Samsung Galaxy A32",
-            "category": "Samsung",
-            "price" : 270,
-            "img" : "/assets/products-img/webp/samsung6.webp",
-            "productDetails": "Dimensions & Weight: 158.9 x 73.6 x 8.4mm, 184g; Camera: 64MP Main Camera · F1.8, FOV 80°. 8MP Ultra Wide Camera · F2.2, FOV 123°. 5MP Depth Camera · F2.4, FOV 88°. 5MP Macro Camera · F2.4, FOV 88°",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngwing-com-39.webp",
-                "/assets/phone-accessories/webp/pngwing-com-15.webp",
-                "/assets/phone-accessories/webp/pngwing-com-14.webp",
-                "/assets/phone-accessories/webp/pngwing-com-5.webp"
-            ]
-          },
-  
-        {
-            "id" : 7,
-            "title" : "iPhone 14 Pro",
-            "category": "Iphone",
-            "price" : 720,
-            "img" : "/assets/products-img/webp/iphone1.webp",
-            "productDetails": "Dimensions & Weight: 160 x 75 x 8mm, 180g; Camera: 108MP Main Camera · F1.6, FOV 78°. 12MP Ultra Wide Camera · F2.2, FOV 120°. 8MP Telephoto Camera · F2.4, FOV 50°.",
-            "imgGroup" : [
-                "/assets/phone-accessories/webp/pngegg(4).webp",
-                "/assets/phone-accessories/webp/pngegg(14).webp",
-                "/assets/phone-accessories/webp/pngegg(23).webp",
-                "/assets/phone-accessories/webp/pngegg(8).webp"
-            ]
-          },
-          {
-            "id" : 8,
-            "title" : "iPhone 13 Mini",
-            "category": "Iphone",
-            "price" : 670,
-            "img" : "/assets/products-img/webp/iphone2.webp",
-            "productDetails": "Dimensions & Weight: 131 x 64 x 7.3mm, 135g; Camera: 12MP Main Camera · F1.6, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngegg(14).webp",
-                "/assets/phone-accessories/webp/pngegg(15).webp",
-                "/assets/phone-accessories/webp/pngegg(20).webp",
-                "/assets/phone-accessories/webp/pngegg(3).webp"
-              ]
-          },
-          {
-            "id" : 9,
-            "title" : "iPhone SE 2022",
-            "category": "Iphone",
-            "price" : 400,
-            "img" : "/assets/products-img/webp/iphone3.webp",
-            "productDetails": "Dimensions & Weight: 138 x 67 x 7.3mm, 148g; Camera: 12MP Main Camera · F1.8, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngegg(5).webp",
-                "/assets/phone-accessories/webp/pngegg(13).webp",
-                "/assets/phone-accessories/webp/pngegg(18).webp",
-                "/assets/phone-accessories/webp/pngegg(21).webp"
-              ]
-          },
-          {
-            "id" : 10,
-            "title" : "iPhone 12 Pro",
-            "category": "Iphone",
-            "price" : 620,
-            "img" : "/assets/products-img/webp/iphone4.webp",
-            "productDetails": "Dimensions & Weight: 146 x 71 x 7.4mm, 189g; Camera: 12MP Main Camera · F1.6, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
-              "imgGroup" : [
-                   "/assets/phone-accessories/webp/pngegg(1).webp",
-                   "/assets/phone-accessories/webp/pngegg(21).webp",
-                   "/assets/phone-accessories/webp/pngegg(11).webp",
-                   "/assets/phone-accessories/webp/pngegg(19).webp"
-              ]
-          },
-          {
-            "id" : 11,
-            "title" : "iPhone XR",
-            "category": "Iphone",
-            "price" : 499,
-            "img" : "/assets/products-img/webp/iphone5.webp",
-            "productDetails": "Dimensions & Weight: 150 x 75 x 8.3mm, 194g; Camera: 12MP Main Camera · F1.8, FOV 78°. 8MP Ultra Wide Camera · F2.4, FOV 120°.",
-              "imgGroup" : [
-                "/assets/phone-accessories/webp/pngegg(7).webp",
-                "/assets/phone-accessories/webp/pngegg(12).webp",
-                "/assets/phone-accessories/webp/pngegg(22).webp",
-                "/assets/phone-accessories/webp/pngegg(10).webp"
-              ]
-          },
-          {
-            "id" : 12,
-            "title" : "iPhone 11",
-            "category": "Iphone",
-            "price" : 550,
-            "img" : "/assets/products-img/webp/iphone6.webp",
-            "productDetails": "Dimensions & Weight: 151 x 76 x 8.5mm, 201g; Camera: 12MP Main Camera · F1.8, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
-              "imgGroup" : [
-                   "/assets/phone-accessories/webp/pngegg(27).webp",
-                   "/assets/phone-accessories/webp/pngegg(18).webp",
-                   "/assets/phone-accessories/webp/pngegg(6).webp",
-                   "/assets/phone-accessories/webp/pngegg(14).webp"
-              ]
-          },
-  
-          {
-              "id" : 13,
-              "title" : "Huawei P50 Pro",
-              "category":"Huawei",
-              "price" : 450,
-              "img" : "/assets/products-img/webp/huawei1.webp",
-              "productDetails": "Dimensions & Weight: 158.8 x 72.8 x 8.5mm, 195g; Camera: 50MP Ultra Vision Camera Wide · F1.8, FOV 80°. 64MP Ultra-Wide Cine Camera · F2.2, FOV 120°. 13MP Telephoto Camera · F3.4, FOV 50°.",
-              "imgGroup" : [
-                   "/assets/phone-accessories/webp/pngwing-com-30.webp",
-                   "/assets/phone-accessories/webp/pngwing-com-41.webp",
-                   "/assets/phone-accessories/webp/pngwing-com-1.webp",
-                   "/assets/phone-accessories/webp/pngwing-com-12.webp"
-              ]
-            },
-            {
-              "id" : 14,
-              "title" : "Huawei Mate 40",
-              "category":"Huawei",
-              "price" : 680,
-              "img" : "/assets/products-img/webp/huawei2.webp",
-              "productDetails": "Dimensions & Weight: 162.9 x 75.5 x 9.1mm, 212g; Camera: 50MP Ultra Vision Camera Wide · F1.9, FOV 80°. 20MP Ultra-Wide Cine Camera · F2.4, FOV 120°. 12MP Telephoto Camera · F3.4, FOV 50°.",
-                "imgGroup" : [
-                     "/assets/phone-accessories/webp/pngwing-com-25.webp",
-                     "/assets/phone-accessories/webp/pngwing-com-20.webp",
-                     "/assets/phone-accessories/webp/pngwing-com-15.webp",
-                     "/assets/phone-accessories/webp/pngwing-com-8.webp"
-                ]
-            },
-            {
-              "id" : 15,
-              "title" : "Huawei P40 Pro",
-              "category":"Huawei",
-              "price" : 810,
-              "img" : "/assets/products-img/webp/huawei3.webp",
-              "productDetails": "Dimensions & Weight: 158.2 x 72.6 x 8.9mm, 209g; Camera: 50MP Ultra Vision Camera Wide · F1.9, FOV 80°. 40MP Ultra-Wide Cine Camera · F1.8, FOV 120°. 12MP Telephoto Camera · F3.4, FOV 50°.",
-                "imgGroup" : [
-                     "/assets/phone-accessories/webp/pngegg(21).webp",
-                     "/assets/phone-accessories/webp/pngegg(15).webp",
-                     "/assets/phone-accessories/webp/pngegg(29).webp",
-                     "/assets/phone-accessories/webp/pngegg(30).webp"
-                ]
-            },
-            {
-              "id" : 16,
-              "title" : "Huawei Nova 8",
-              "category":"Huawei",
-              "price" : 650,
-              "img" : "/assets/products-img/webp/huawei4.webp",
-              "productDetails": "Dimensions & Weight: 163.3 x 74.1 x 7.9mm, 184g; Camera: 64MP Main Camera · F1.9, FOV 80°. 8MP Ultra-Wide Camera · F2.4, FOV 120°. 2MP Macro Camera · F2.4, FOV 50°.",
-                "imgGroup" : [
-                     "/assets/phone-accessories/webp/pngegg(31).webp",
-                     "/assets/phone-accessories/webp/pngegg.webp",
-                     "/assets/phone-accessories/webp/pngegg(6).webp",
-                     "/assets/phone-accessories/webp/pngegg(12).webp"
-                ]
-            },
-            {
-              "id" : 17,
-              "title" : "Huawei Enjoy 20",
-              "category":"Huawei",
-              "price" : 350,
-              "img" : "/assets/products-img/webp/huawei5.webp",
-              "productDetails": "Dimensions & Weight: 160.2 x 73.3 x 8mm, 192g; Camera: 48MP Main Camera · F1.8, FOV 80°. 8MP Ultra-Wide Camera · F2.4, FOV 120°. 2MP Depth Camera · F2.4, FOV 50°.",
-                "imgGroup" : [
-                     "/assets/phone-accessories/webp/pngegg(8).webp",
-                     "/assets/phone-accessories/webp/pngegg(28).webp",
-                     "/assets/phone-accessories/webp/pngegg(20).webp",
-                     "/assets/phone-accessories/webp/pngegg(14).webp"
-                ]
-            },
-            {
-              "id" : 18,
-              "title" : "Huawei Mate X2",
-              "category":"Huawei",
-              "price" : 820,
-              "img" : "/assets/products-img/webp/huawei6.webp",
-              "productDetails": "Dimensions & Weight: 161.8 x 145.8 x 8.2mm folded, 295g; Camera: 50MP Ultra Vision Camera Wide · F1.9, FOV 80°. 16MP Ultra-Wide Camera · F2.2, FOV 120°. 12MP Telephoto Camera · F2.4, FOV 50°.",
-                "imgGroup" : [
-                    "/assets/phone-accessories/webp/pngwing.com.webp",
-
-                    "/assets/phone-accessories/webp/pngegg(9).webp",
-
-                    "/assets/phone-accessories/webp/pngegg(19).webp",
-
-                    "/assets/phone-accessories/webp/pngegg(16).webp"
-                ]
-            }
-    ]
+  "products": [
+    {
+      "id": "2",
+      "title": "Samsung Galaxy A53",
+      "category": "Samsung",
+      "price": 399,
+      "img": "/assets/products-img/webp/samsung-two.webp",
+      "productDetails": "Dimensions & Weight: Unfolded: 128.1 x 158.2 x 6.4mm, Folded: 67.1 x 158.2 x 14.4mm, 271g; Camera: 12MP Wide-angle Camera · F1.8, OIS. 12MP Ultra Wide Camera · F2.2. 12MP Telephoto Camera · F2.4, OIS",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing-com-35.webp",
+        "/assets/phone-accessories/webp/pngwing-com-13.webp",
+        "/assets/phone-accessories/webp/pngwing-com-17.webp",
+        "/assets/phone-accessories/webp/pngwing-com-1.webp"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Samsung Android Fold",
+      "category": "Samsung",
+      "price": 380,
+      "img": "data:image/webp;base64,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",
+      "productDetails": "Dimensions & Weight: Unfolded: 128.1 x 158.2 x 6.4mm, Folded: 67.1 x 158.2 x 14.4mm, 271g; Camera: 12MP Wide-angle Camera · F1.8, OIS. 12MP Ultra Wide Camera · F2.2. 12MP Telephoto Camera · F2.4, OIS",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing-com-6.webp",
+        "/assets/phone-accessories/webp/pngwing-com-16.webp",
+        "/assets/phone-accessories/webp/pngwing-com-10.webp",
+        "/assets/phone-accessories/webp/pngwing-com-35.webp"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Samsung Galaxy Note 20",
+      "category": "Samsung",
+      "price": 450,
+      "img": "/assets/products-img/webp/samsung-four.webp",
+      "productDetails": "Dimensions & Weight: 164.8 x 77.2 x 8.1mm, 208g; Camera: 108MP Wide-angle Camera · F1.8, FOV 79°. 12MP Ultra Wide Camera · F2.2, FOV 120°. 12MP Telephoto Camera · F3.0, OIS",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing-com-33.webp",
+        "/assets/phone-accessories/webp/pngwing-com-9.webp",
+        "/assets/phone-accessories/webp/pngwing-com-29.webp",
+        "/assets/phone-accessories/webp/pngwing-com-40.webp"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Samsung Galaxy S21",
+      "category": "Samsung",
+      "price": 250,
+      "img": "/assets/products-img/webp/samsung-five.webp",
+      "productDetails": "Dimensions & Weight: 155.7 x 74.5 x 7.9mm, 171g; Camera: 12MP Wide Camera · F1.8, FOV 79°. 12MP Ultra Wide Camera · F2.2, FOV 123°. 8MP Telephoto Camera · F2.4, FOV 32°",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing-com-37.webp",
+        "/assets/phone-accessories/webp/pngwing-com-18.webp",
+        "/assets/phone-accessories/webp/pngwing-com-4.webp",
+        "/assets/phone-accessories/webp/pngwing-com-25.webp"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Samsung Galaxy A32",
+      "category": "Samsung",
+      "price": 270,
+      "img": "/assets/products-img/webp/samsung-six.webp",
+      "productDetails": "Dimensions & Weight: 158.9 x 73.6 x 8.4mm, 184g; Camera: 64MP Main Camera · F1.8, FOV 80°. 8MP Ultra Wide Camera · F2.2, FOV 123°. 5MP Depth Camera · F2.4, FOV 88°. 5MP Macro Camera · F2.4, FOV 88°",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing-com-39.webp",
+        "/assets/phone-accessories/webp/pngwing-com-15.webp",
+        "/assets/phone-accessories/webp/pngwing-com-14.webp",
+        "/assets/phone-accessories/webp/pngwing-com-5.webp"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "iPhone 14 Pro",
+      "category": "Iphone",
+      "price": 720,
+      "img": "/assets/products-img/webp/iphone-one.webp",
+      "productDetails": "Dimensions & Weight: 160 x 75 x 8mm, 180g; Camera: 108MP Main Camera · F1.6, FOV 78°. 12MP Ultra Wide Camera · F2.2, FOV 120°. 8MP Telephoto Camera · F2.4, FOV 50°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(4).webp",
+        "/assets/phone-accessories/webp/pngegg(14).webp",
+        "/assets/phone-accessories/webp/pngegg(23).webp",
+        "/assets/phone-accessories/webp/pngegg(8).webp"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "iPhone 13 Mini",
+      "category": "Iphone",
+      "price": 670,
+      "img": "/assets/products-img/webp/iphone-two.webp",
+      "productDetails": "Dimensions & Weight: 131 x 64 x 7.3mm, 135g; Camera: 12MP Main Camera · F1.6, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(14).webp",
+        "/assets/phone-accessories/webp/pngegg(15).webp",
+        "/assets/phone-accessories/webp/pngegg(20).webp",
+        "/assets/phone-accessories/webp/pngegg(3).webp"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "iPhone SE 2022",
+      "category": "Iphone",
+      "price": 400,
+      "img": "/assets/products-img/webp/iphone-three.webp",
+      "productDetails": "Dimensions & Weight: 138 x 67 x 7.3mm, 148g; Camera: 12MP Main Camera · F1.8, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(5).webp",
+        "/assets/phone-accessories/webp/pngegg(13).webp",
+        "/assets/phone-accessories/webp/pngegg(18).webp",
+        "/assets/phone-accessories/webp/pngegg(21).webp"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "iPhone 12 Pro",
+      "category": "Iphone",
+      "price": 620,
+      "img": "/assets/products-img/webp/iphone-four.webp",
+      "productDetails": "Dimensions & Weight: 146 x 71 x 7.4mm, 189g; Camera: 12MP Main Camera · F1.6, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(1).webp",
+        "/assets/phone-accessories/webp/pngegg(21).webp",
+        "/assets/phone-accessories/webp/pngegg(11).webp",
+        "/assets/phone-accessories/webp/pngegg(19).webp"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "iPhone XR",
+      "category": "Iphone",
+      "price": 499,
+      "img": "/assets/products-img/webp/iphone-five.webp",
+      "productDetails": "Dimensions & Weight: 150 x 75 x 8.3mm, 194g; Camera: 12MP Main Camera · F1.8, FOV 78°. 8MP Ultra Wide Camera · F2.4, FOV 120°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(7).webp",
+        "/assets/phone-accessories/webp/pngegg(12).webp",
+        "/assets/phone-accessories/webp/pngegg(22).webp",
+        "/assets/phone-accessories/webp/pngegg(10).webp"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "iPhone 11",
+      "category": "Iphone",
+      "price": 550,
+      "img": "/assets/products-img/webp/iphone-six.webp",
+      "productDetails": "Dimensions & Weight: 151 x 76 x 8.5mm, 201g; Camera: 12MP Main Camera · F1.8, FOV 78°. 12MP Ultra Wide Camera · F2.4, FOV 120°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(27).webp",
+        "/assets/phone-accessories/webp/pngegg(18).webp",
+        "/assets/phone-accessories/webp/pngegg(6).webp",
+        "/assets/phone-accessories/webp/pngegg(14).webp"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Huawei Mate 40",
+      "category": "Huawei",
+      "price": 680,
+      "img": "/assets/products-img/webp/huawei-two.webp",
+      "productDetails": "Dimensions & Weight: 162.9 x 75.5 x 9.1mm, 212g; Camera: 50MP Ultra Vision Camera Wide · F1.9, FOV 80°. 20MP Ultra-Wide Cine Camera · F2.4, FOV 120°. 12MP Telephoto Camera · F3.4, FOV 50°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing-com-25.webp",
+        "/assets/phone-accessories/webp/pngwing-com-20.webp",
+        "/assets/phone-accessories/webp/pngwing-com-15.webp",
+        "/assets/phone-accessories/webp/pngwing-com-8.webp"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Huawei P40 Pro",
+      "category": "Huawei",
+      "price": 810,
+      "img": "/assets/products-img/webp/huawei-three.webp",
+      "productDetails": "Dimensions & Weight: 158.2 x 72.6 x 8.9mm, 209g; Camera: 50MP Ultra Vision Camera Wide · F1.9, FOV 80°. 40MP Ultra-Wide Cine Camera · F1.8, FOV 120°. 12MP Telephoto Camera · F3.4, FOV 50°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(21).webp",
+        "/assets/phone-accessories/webp/pngegg(15).webp",
+        "/assets/phone-accessories/webp/pngegg(29).webp",
+        "/assets/phone-accessories/webp/pngegg(30).webp"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Huawei Nova 8",
+      "category": "Huawei",
+      "price": 650,
+      "img": "/assets/products-img/webp/huawei-four.webp",
+      "productDetails": "Dimensions & Weight: 163.3 x 74.1 x 7.9mm, 184g; Camera: 64MP Main Camera · F1.9, FOV 80°. 8MP Ultra-Wide Camera · F2.4, FOV 120°. 2MP Macro Camera · F2.4, FOV 50°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(31).webp",
+        "/assets/phone-accessories/webp/pngegg.webp",
+        "/assets/phone-accessories/webp/pngegg(6).webp",
+        "/assets/phone-accessories/webp/pngegg(12).webp"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Huawei Enjoy 20",
+      "category": "Huawei",
+      "price": 350,
+      "img": "/assets/products-img/webp/huawei-five.webp",
+      "productDetails": "Dimensions & Weight: 160.2 x 73.3 x 8mm, 192g; Camera: 48MP Main Camera · F1.8, FOV 80°. 8MP Ultra-Wide Camera · F2.4, FOV 120°. 2MP Depth Camera · F2.4, FOV 50°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngegg(8).webp",
+        "/assets/phone-accessories/webp/pngegg(28).webp",
+        "/assets/phone-accessories/webp/pngegg(20).webp",
+        "/assets/phone-accessories/webp/pngegg(14).webp"
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Huawei Mate X2",
+      "category": "Huawei",
+      "price": 820,
+      "img": "/assets/products-img/webp/huawei-six.webp",
+      "productDetails": "Dimensions & Weight: 161.8 x 145.8 x 8.2mm folded, 295g; Camera: 50MP Ultra Vision Camera Wide · F1.9, FOV 80°. 16MP Ultra-Wide Camera · F2.2, FOV 120°. 12MP Telephoto Camera · F2.4, FOV 50°.",
+      "imgGroup": [
+        "/assets/phone-accessories/webp/pngwing.com.webp",
+        "/assets/phone-accessories/webp/pngegg(9).webp",
+        "/assets/phone-accessories/webp/pngegg(19).webp",
+        "/assets/phone-accessories/webp/pngegg(16).webp"
+      ]
+    },
+    {
+      "id": "f10c",
+      "title": "Huawei 32",
+      "category": "Huawei",
+      "price": 498,
+      "img": "data:image/webp;base64,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",
+      "productDetails": "lkklwdnvklvnwkm",
+      "imgGroup": []
+    }
+  ]
 }
-

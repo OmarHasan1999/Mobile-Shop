@@ -27,11 +27,11 @@
             <div class="iphoneModel">
                 <v-container fluid>
                 <v-row class="align-center iphoneModelRow">
-                <v-col cols="3"></v-col>
-                <v-col cols="3">
+                <!-- <v-col cols="3"></v-col> -->
+                <!-- <v-col cols="3"> -->
+                <v-col cols="12" sm="12" md="5" class="d-flex justify-center">
                 <div class="leftSectionIphone">
-                <div class="iphone" ref="iphoneModelRef">
-                </div>
+                <div class="iphone" ref="iphoneModelRef"></div>
 
                 <h3>IPHONE 15 Pro Max</h3>
                 <div class="colors">
@@ -49,7 +49,8 @@
                 </div>
                 </v-col>
 
-                <v-col cols="6">
+                <!-- <v-col cols="6"> -->
+                <v-col cols="12" sm="12" md="7">
                 <div class="rightSectionIphone">
                     <p class="neP">
                     The iPhone 15 Pro Max combines cutting-edge performance with elegant design.

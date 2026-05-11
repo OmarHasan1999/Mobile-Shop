@@ -18,7 +18,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.setSize(phoneContainer.clientWidth , phoneContainer.clientHeight)
 phoneContainer.appendChild(renderer.domElement)
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 7)
+const ambientLight = new THREE.AmbientLight(0xffffff, 10)
 ambientLight.position.set(-2,1,0)
 scene.add(ambientLight)
 

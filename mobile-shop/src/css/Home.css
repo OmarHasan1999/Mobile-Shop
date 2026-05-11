@@ -734,7 +734,7 @@ transform: scale(1.06);
     .rightSectionIphone p{
         
         margin-left: -5vh;
-        text-align: center;
+        text-align: left;
     }
 }
 @media (max-width: 450px){
@@ -746,7 +746,8 @@ transform: scale(1.06);
     }
     .rightSectionIphone p{
         margin-left: -6vh;
-        text-align: center;
+        margin-top: -5px;
+        /* text-align: center; */
     }
 }
 @media (max-width: 400px){
@@ -759,8 +760,9 @@ transform: scale(1.06);
     }
     .rightSectionIphone p{
         margin-left: -12vh;
-        text-align: center;
-        width: 205%;
+        /* text-align: center; */
+        width: 220%;
+        line-height: 1.4;
     }
 }
 @media (max-width: 370px){
@@ -773,8 +775,8 @@ transform: scale(1.06);
     }
     .rightSectionIphone p{
         padding: 0vh;
-        margin-left: -12vh;
-        text-align: center;
+        margin-left: -8vh;
+        /* text-align: center; */
         width: 220%;
     }
 }
@@ -791,7 +793,7 @@ transform: scale(1.06);
     .rightSectionIphone p{
         font-size: 14.5px;
         margin-left: -11vh;
-        text-align: center;
+        /* text-align: center; */
         line-height: 1.45;
         width: 193%;
     }
@@ -807,15 +809,15 @@ transform: scale(1.06);
     }
     .rightSectionIphone p{
         font-size: 13.5px;
-        margin-left:-14vh;
+        margin-left:-16vh;
         text-align: left;
-        line-height: 1.5;
+        line-height: 1.6;
         padding: 0 3vh;
         display: -webkit-box;
         -webkit-line-clamp: 6;      /* عدد الأسطر التي تُعرض */
         -webkit-box-orient: vertical;
         overflow: hidden;  
-        width: 170%;
+        width: 165%;
     }
 }
 @media (max-width: 320px){
@@ -832,10 +834,10 @@ transform: scale(1.06);
         font-size: 13.5px;
         margin-left:-14vh;
         text-align: left;
-        line-height: 1.5;
+        line-height: 1.6;
         padding: 0 3vh;
         display: -webkit-box;
-        -webkit-line-clamp: 5;      /* عدد الأسطر التي تُعرض */
+        -webkit-line-clamp: 5;     
         -webkit-box-orient: vertical;
         overflow: hidden;  
         width: 280%;

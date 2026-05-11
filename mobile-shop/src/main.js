@@ -7,6 +7,7 @@ import './css/footers.css'
 import './css/Header.css'
 import './css/Category.css'
 import './css/detail.css'
+import './css/toast.css'
 
 import { createPinia } from 'pinia'
 
@@ -24,6 +25,9 @@ const vuetify = createVuetify({
   directives,
 })
 
+// toastification
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
 
 //Emitter Config
 import mitt from 'mitt'
@@ -35,6 +39,12 @@ app.provide("Emitter" ,Emitter)
 app.use(router)
 app.use(vuetify)
 app.use(pinia)
+app.use(Toast, {
+  toastDefaults: {
+    timeout: 3000,
+  },
+  containerClassName: "custom-toast-container",
+})
 app.mount('#app')
 
 
