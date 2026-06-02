@@ -15,7 +15,7 @@
                 </v-card-title>
 
                 <v-list-item class="px-0 py-4">
-                <v-list-item-title class="menuLinks" @click="$router.push({name:'Home'})">HOME</v-list-item-title>
+                <v-list-item-title class="menuLinks" @click="goHome">HOME</v-list-item-title>
 
                 <v-list aria-label="category list">
                 <v-list-group class="listGroup">
@@ -62,15 +62,27 @@
 <script setup>
 import { products } from '../../store/store'
 import { ref, inject, onMounted, watch } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 import { storeToRefs } from "pinia"
 
 const theProducts = products()
 const drawer = ref(false)
 const theRouter = useRouter()
+const theRoute = useRoute()
 const emitter = inject("Emitter")
 
 const { categories } = storeToRefs(theProducts)
+
+const resetScroll = () => {
+    drawer.value = false
+    const body = document.body
+    body.classList.remove("no-scroll")
+    body.style.overflow = ""
+    body.style.position = ""
+    body.style.top = ""
+    body.style.width = ""
+    window.scrollTo(0, scrollPosition)
+}
 
 const windowWidth = defineProps({
     windowWidth: {
@@ -102,11 +114,12 @@ watch(drawer, (val) => {
         body.style.top = `-${scrollPosition}px`
         body.style.width = "100%"
     }else{
-        body.classList.remove("no-scroll")
-        body.style.position = ""
-        body.style.top = ""
-        body.style.width = ""
-        window.scrollTo(0,scrollPosition)
+        resetScroll()
+        // body.classList.remove("no-scroll")
+        // body.style.position = ""
+        // body.style.top = ""
+        // body.style.width = ""
+        // window.scrollTo(0,scrollPosition)
     }
 })
 
@@ -116,6 +129,13 @@ watch(() => windowWidth.windowWidth,(width) => {
         drawer.value = false
     }
 })
+
+const goHome = () => {
+    resetScroll()
+    setTimeout(() => {
+        theRouter.push({name:'Home'})
+    }, 50)
+}
 
 </script>
 

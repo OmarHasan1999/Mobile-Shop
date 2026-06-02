@@ -1,12 +1,22 @@
-const express = require("express")
-const cors = require("cors")
-const helmet = require("helmet")
-const port = process.env.PORT || 4242
+import express from 'express'
+import cors from 'cors'
+import helmet from 'helmet'
+import dotenv from 'dotenv'
+import jsonServer from 'json-server'
+import Stripe from 'stripe'
 
-require("dotenv").config()
-const stripe = require('stripe')(process.env.SECRET_KEY)
+dotenv.config()
+
 const app = express()
+const port = process.env.PORT || 4242
+const stripe = new Stripe(process.env.SECRET_KEY)
 app.use(express.json())
+
+// JSON Server
+const router = jsonServer.router('db.json')
+const middlewares = jsonServer.defaults()
+app.use('/api', middlewares)
+app.use('/api', router)
 
 //cors
 app.use(cors({ origin: process.env.FRONTEND_URL }))
@@ -76,3 +86,5 @@ app.post('/create-checkout-session', async(req,res) => {
 })
 
 app.listen(port,"0.0.0.0", () => console.log(`Server running at http://localhost:${port}`))
+
+export default app

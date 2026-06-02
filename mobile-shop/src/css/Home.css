@@ -119,9 +119,11 @@ overflow: hidden;
     align-items: center;
 }
 
+/* ============================== */
+
 .iphoneModel{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +181,6 @@ overflow: hidden;
 }
 
 .rightSectionIphone{
-    width: 70%;
     padding-top: 4vh;
 }
 .iphoneModel p{
@@ -190,6 +191,58 @@ overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     transform: translateX(20px);
     transition: all 0.6s ease-out;
+    width:450px;
+}
+
+@media (max-width: 870px) {
+    .iphoneModel {
+        gap: 0px;
+    }
+    .iphoneModel p{
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .iphoneModel {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .iphoneModel .iphone {
+        width: 280px;
+        height: 380px;
+    }
+
+    .iphoneModel p {
+        width: 92%;
+        font-size: 15px;
+        text-align: left;
+        padding-right: 0rem;
+    }
+
+    .rightSectionIphone {
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .iphoneModel .iphone {
+        width: 230px;
+        height: 320px;
+    }
+    .rightSectionIphone{
+    padding-right:10%;
+}
+
+    .iphoneModel p {
+        font-size: 14px;
+        width: 93%;
+        line-height: 1.6;
+    }
 }
 
 .hotspotLogo {
@@ -217,7 +270,7 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
   pointer-events: auto;
   box-shadow: 0 0 8px rgba(255,255,255,0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  bottom: 127.1%;
+  bottom: 130.7%;
   right: 100.7%;
 }
 .hotspotLogo::before,
@@ -550,6 +603,12 @@ transform: scale(1.06);
 @media (max-width: 480px){
 .firstContainer .one{
     margin-left: 16vh!important;
+    margin-top: -38vh !important;
+
+}
+.firstContainer .two{
+    height: 450px !important;
+    margin-left: -1rem !important;
 }
 }
 @media (max-width: 450px){
@@ -571,10 +630,7 @@ transform: scale(1.06);
     padding-top: -4vh !important;
     margin-top: -38vh !important;
 }
-.firstContainer .two{
-    height: 470px!important;
 
-}
 .one .hrHome{
     height: 9vh!important;
 }
@@ -625,223 +681,6 @@ transform: scale(1.06);
     margin-top: -37vh !important;
 
 }
-}
-
-@media (max-width: 1100px){
-.rightSectionIphone{
-    width: 90%;
-    margin-left: -4vh;
-}
-
-.iphoneModel{
-    padding: 0px 40px 0 0 ;
-}
-.leftSectionIphone{
-    padding-right: 10vh;
-}
-
-}
-@media (max-width: 950px){
-.rightSectionIphone{
-    width: 105%;
-    margin-left: -10vh;
-}
-
-.leftSectionIphone{
-    margin-left: -20vh;
-}
-.iphoneModel h3{
-    font-size: 14px;
-    text-align: center;
-}
-}
-@media (max-width: 800px){
-.rightSectionIphone{
-    width: 125%;
-    margin-left: -13vh;
-}
-
-.leftSectionIphone{
-    margin-left: -25vh;
-}
-.iphoneModel h3{
-    font-size: 14px;
-    text-align: center;
-}
-.iphoneModel .iphone{
-    width: 300px !important;
-    height: 430px;
-}
-}
-@media (max-width: 765px){
-.iphoneModel .iphoneModelRow{
-    flex-direction: column;
-}
-.iphoneModel{
-    padding : 0 20px
-}
-.leftSectionIphone{
-    margin: 0vh;
-    padding: 0;
-}
-.rightSectionIphone{
-    padding: 0;
-    width: 173%;
-}
-.rightSectionIphone p{
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: left;
-    transition: all 0.8s ease-out;
-    padding-right:4vh;
-    margin-left: -3vh;
-}
-}
-@media (max-width: 670px){
-    .iphoneModel h3{
-        white-space: nowrap;
-    }
-}
-@media (max-width: 650px){
-.iphoneModel{
-        padding : 0px
-}
-.rightSectionIphone{
-    padding: 0;
-    width: 180%;
-}
-}
-@media (max-width: 550px){
-    .iphoneModel{
-        padding : 0px 6vh
-}
-    .rightSectionIphone{
-        width: 200%;
-    }
-    .rightSectionIphone p{
-        font-size: 15px;
-        line-height: 1.65;
-        margin-left: -6vh;
-    }
-}
-@media (max-width: 500px){
-    .iphoneModel{
-        padding : 0px 2vh;
-}
-    .rightSectionIphone{
-        width: 195%;
-    }
-    .rightSectionIphone p{
-        
-        margin-left: -5vh;
-        text-align: left;
-    }
-}
-@media (max-width: 450px){
-    .iphoneModel{
-        padding : 0px 0vh;
-}
-    .rightSectionIphone{
-        width: 195%;
-    }
-    .rightSectionIphone p{
-        margin-left: -6vh;
-        margin-top: -5px;
-        /* text-align: center; */
-    }
-}
-@media (max-width: 400px){
-    .iphoneModel{
-        padding : 0px 12vh;
-}
-    .rightSectionIphone{
-        width: 198%;
-        
-    }
-    .rightSectionIphone p{
-        margin-left: -12vh;
-        /* text-align: center; */
-        width: 220%;
-        line-height: 1.4;
-    }
-}
-@media (max-width: 370px){
-    .iphoneModel{
-        padding : 0px 14vh;
-}
-    .rightSectionIphone{
-        width: 230%;
-        
-    }
-    .rightSectionIphone p{
-        padding: 0vh;
-        margin-left: -8vh;
-        /* text-align: center; */
-        width: 220%;
-    }
-}
-
-@media (max-width: 350px){
-    .iphoneModel{
-        padding : 0px 16vh;
-}
-    .rightSectionIphone{
-        width: 370%;
-        margin-top: -1vh !important;
-        
-    }
-    .rightSectionIphone p{
-        font-size: 14.5px;
-        margin-left: -11vh;
-        /* text-align: center; */
-        line-height: 1.45;
-        width: 193%;
-    }
-}
-@media (max-width: 330px){
-    .iphoneModel{
-        padding : 0px 17.5vh;
-}
-    .rightSectionIphone{
-        width: 850%;
-        margin-top: -1.8vh !important;
-        
-    }
-    .rightSectionIphone p{
-        font-size: 13.5px;
-        margin-left:-16vh;
-        text-align: left;
-        line-height: 1.6;
-        padding: 0 3vh;
-        display: -webkit-box;
-        -webkit-line-clamp: 6;      /* عدد الأسطر التي تُعرض */
-        -webkit-box-orient: vertical;
-        overflow: hidden;  
-        width: 165%;
-    }
-}
-@media (max-width: 320px){
-    .iphoneModel{
-        padding : 0px 17vh;
-}
-    .rightSectionIphone{
-        width: 490%;
-        margin-top: -1.8vh !important;
-        padding: 0 -12vh;
-        
-    }
-    .rightSectionIphone p{
-        font-size: 13.5px;
-        margin-left:-14vh;
-        text-align: left;
-        line-height: 1.6;
-        padding: 0 3vh;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;     
-        -webkit-box-orient: vertical;
-        overflow: hidden;  
-        width: 280%;
-    }
 }
 
 /* compare images section */

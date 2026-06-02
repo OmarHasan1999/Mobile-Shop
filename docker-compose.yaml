@@ -8,7 +8,6 @@ services:
       - /app/node_modules
     depends_on:
       - backend
-      - json-server
     command: npm run dev
 
   backend:
@@ -20,13 +19,6 @@ services:
       - /app/node_modules
     environment:
       - PORT=4242
+      - SECRET_KEY=${SECRET_KEY}
+      - FRONTEND_URL=http://localhost:5173
     command: npm run dev
-
-  json-server:
-      build: ./json-server
-      ports:
-        - "3000:3000"
-      volumes:
-        - ./json-server:/app
-        - /app/node_modules
-      command: npm run dev
