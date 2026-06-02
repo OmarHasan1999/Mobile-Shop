@@ -1,6 +1,6 @@
 ## 📱 Mobile Shop – Vue.js E-Commerce
 
-## 🌐 [Live Demo](https://mobile-shop-app.web.app)
+## 🌐 [Live Demo](https://mobile-phones-shop.web.app)
 
 > **API:** [omarh-dev99-mobile-shop-api.hf.space](https://omarh-dev99-mobile-shop-api.hf.space)
 
