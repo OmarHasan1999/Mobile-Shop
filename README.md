@@ -2,7 +2,7 @@
 
 ## 🌐 [Live Demo](https://mobile-phones-shop.web.app)
 
-> **API:** [omarh-dev99-mobile-shop-api.hf.space](https://omarh-dev99-mobile-shop-api.hf.space)
+>  **[Backend API](https://omarh-dev99-mobile-shop-api.hf.space)**
 
 ## 📄 Description
 * Mobile Shop is an e-commerce web application built to practice modern frontend and backend web development.  
